@@ -1,0 +1,25 @@
+/* GLOBAL SETTINGS */
+/* ==================================================== */
+
+body { 
+    background-image: url("../img/hedgehog.jpg");
+    background-size: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    color: rgb(255, 196, 0);
+    font-family: font-family: 'Dokdo', cursive;
+    overflow-x: hidden; /* keep all of the content within the browser window */ 
+}
+
+/* SPECIFIC SETTINGS */
+/* ==================================================== */
+
+[class*="col-"] {
+    padding: 1rem;
+  }
+
+
+.container {
+    margin: auto;
+    text-align: center;
+}

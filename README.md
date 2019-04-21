@@ -33,6 +33,9 @@ If you'd like to see the action behind the scenes, check out the github repo: [h
 - axios
   - To install it: "npm i axios"
   - [https://www.npmjs.com/package/axios](https://www.npmjs.com/package/axios)
+- morgan
+  - To install it: "npm i morgan"
+  - [https://www.npmjs.com/package/morgan](https://www.npmjs.com/package/morgan)
 
 ## Deployment Tools
 
