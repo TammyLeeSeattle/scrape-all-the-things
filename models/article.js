@@ -17,6 +17,18 @@ var ArticleSchema = new Schema({
     type: String,
     required: true
   },
+
+  // `summary` is required and of type String
+  summary: {
+    type: String,
+    required: true
+  },
+
+  // `summary` determines whether an article has been "Saved" or not
+  saved: {
+    type: Boolean,
+    default: false
+  },
   
   // `note` is an object that stores a Note id
   // The ref property links the ObjectId to the Note model

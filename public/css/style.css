@@ -2,14 +2,11 @@
 /* ==================================================== */
 
 body { 
-    background-image: url("../img/hedgehog.jpg");
-    background-size: no-repeat;
-    background-attachment: fixed;
-    background-position: center;
-    color: rgb(255, 196, 0);
-    font-family: font-family: 'Dokdo', cursive;
+    color: rgb(92, 92, 92);
+    font-family: 'Fresca', sans-serif;
     overflow-x: hidden /* keep all of the content within the browser window */ 
 }
+
 
 [class*="col-"] {
     padding: 1rem;
@@ -23,33 +20,28 @@ body {
 /* SPECIFIC SETTINGS */
 /* ==================================================== */
 
-    /* for jumbotron */
-    .fixed-background {
-        position: relative;
-        width: 100%;
-    }
-    .fixed-wrap {
-        clip: rect(0, auto, auto, 0);
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        z-index: -999!important;
-    }
-    .fixed {
-        position: fixed;
-        display: block;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background-size: cover;
-        background-position: center center;
-        -webkit-transform: translateZ(0);
-                transform: translateZ(0);
-        will-change: transform;
-        background-image: url("../img/theDodoHeader.jpg");
-        background-color: rgba(0, 0, 0, 0.85);
-        z-index: -1;
-    }
+.navbar-brand {
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.nav-link {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: rgb(1, 21, 109)!important
+}
+
+.background {
+    background: url("../img/theDodoHeader.jpg") no-repeat center center;
+    width: 100%;
+    height: 400px;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.jumbotron {
+    height: 400px;
+    background: transparent;
+  }
+  

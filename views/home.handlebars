@@ -1,27 +1,3 @@
-<!-- START NAV BAR -->
-
-  <nav class="navbar navbar-expand-lg navbar-dark bg-secondary">
-
-    <a class="navbar-brand" href="/">Mongo Scraper</a>
-
-    <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation" style="">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-
-    <div class="collapse navbar-collapse" id="navbarColor01">
-      <ul class="navbar-nav mr-auto">
-        <li class="nav-item active">
-          <a class="nav-link" href="/saved">Saved Articles
-            <span class="sr-only">(current)</span>
-          </a>
-        </li>
-      </ul>
-    </div>
-
-  </nav>
-
-<!-- END NAV BAR -->
-
 <!-- START JUMBOTRON -->
 
   <div class="jumbotron text-center">
@@ -29,7 +5,7 @@
       <h1>Mongo Scraper</h1>
       <p>thedodo.com Edition</p>
 
-      <button type="button" class="btn btn-secondary scrape-new">Get the Articles</button>
+      <button type="button" class="btn btn-secondary scrape-new"><a href="/scrape">Get the Articles</a></button>
       <button type="button" class="btn btn-secondary clear-old">Clear the Articles</button>
 
     </div>
@@ -39,15 +15,26 @@
 
 <!-- START SCRAPED ARICLES -->
 
-  <div class="container-fluid article-container">
-    <!-- this is where all of the scraped articles will appear -->
+  <div class="container">
+      {{#each articles}}
+        <div class="card">
+          <div class="card-header">
+            <a href="{{link}}" target="_blank" class="title">{{title}}</a>
+          </div>
+          <div class="card-body">
+            <p class="card-text">{{summary}}</p>
+            <a href="/save" class="btn btn-dark ml-auto">Save this Article</a>
+          </div>
+        </div>
+      {{/each}}
   </div>
+
 
 <!-- END SCRAPED ARICLES -->
 
 <!-- START FOOTER -->
 
-<footer>
+<footer class="footer">
   <div class="container">
     <p>Scraping Only the Most Important Things -- News About Animals</p>
   </div>
@@ -57,4 +44,4 @@
 <!-- END FOOTER -->
 
 <!-- SCRIPT FILES -->
-<script src="../public/js/index.js"
+<script src="../public/js/index.js"></script>
